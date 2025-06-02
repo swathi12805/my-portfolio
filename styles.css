@@ -1,0 +1,152 @@
+body{
+  font-family: 'Noto Sans',sans-serif;
+  font-size: 25px;
+}
+h1{
+  font-size:1em;;
+}
+.container{
+    max-width:840px;
+    margin: 0 auto;
+    padding:32px;
+    background-color:rgba(32, 61, 81, 0.89);
+}
+.container > div{
+  margin:25px auto;  
+}
+
+ .intro{
+    text-align: center;
+    justify-items: center;
+ }
+ 
+ .profile{
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  overflow:hidden;
+ }
+
+ .profile img{
+  display: block;
+  object-fit: cover; 
+  object-position:right;
+  width:100%;
+  box-shadow: 0 8px 16px 0 rgba(90,50,80,0.5);
+  transform: scale(1.1);
+ }
+ 
+ .about{
+    display:grid;
+    grid-template-columns: 50% 50%;
+ }
+
+ .i-am,.i-like{
+    text-align: center;
+ }
+  
+ .lists{
+    text-align: center;
+    list-style: none;
+    padding: 0;
+ }
+
+ @media (max-width:480px){
+ .about{
+    grid-template-columns:100%;
+   }
+ }
+
+ .project{
+   text-align: center;
+ }
+ .project-grid{
+   display: grid;
+   grid-template-columns: 50% 50%;
+   align-items: center;
+ }
+ 
+ .imgg{
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  transform: scale(0.98);
+  display: block;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgba(34, 60, 80, 0.16);
+  transition: all ease in-out .2s;
+ }
+ .imgg:hover{
+  filter: brightness(.7);
+  box-shadow: 4px 4px 4px 4px rgba();
+ }
+ .project-wrapper{
+  position:relative;
+  justify-self: center;
+ }
+ .project-wrapper > h4{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  visibility: hidden;
+  color: black;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+  transition: all ease-in-out .2s;
+  margin: 0;
+
+ }
+ .project-wrapper h4{
+  color:grey; 
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .project-wrapper:hover >h4{
+  visibility: visible;
+ }
+
+ @media(max-width:480px){
+   .project-grid{
+      grid-template-columns: 100%;
+   }
+ }
+
+ .links-contacts{
+   display:grid;
+   grid-template-columns: 50% 50%;
+ }
+
+ .links{
+   justify-self: start;
+ }
+
+ .links-list{
+   list-style: none;
+   padding:0;
+ }
+
+ @media(max-width:480px){
+   .links-contacts{
+   grid-template-columns: 100%;
+ }
+ }
+ textarea{
+  resize: none;
+ }
+
+ from input,textarea{
+  border-radius: 5px;
+  width:200px;
+  height: 40px;
+ }
+ .submit_wrapper{
+  margin:20px 0;
+ }
+ 
+ hr{
+  border:0;
+  height:1px;
+  background-image: linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0.75),rgba(0,0,0,0));
+ }

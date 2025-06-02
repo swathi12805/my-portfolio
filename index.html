@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <div class="intro">
+        <div class="profile">
+            <img src="images/picture1.png"/>
+        </div>
+        <h1>Swathi S</h1>
+        <h3>You Only Live Once!!</h3>
+    </div>
+    <hr>
+
+    <div class="about">
+
+        <div class="i-am">
+            <h1>I Am</h1>
+            <ul class="lists">
+                <li>A Computer Science Student</li>
+                <li>A BasketBall Player</li>
+                <li>A Public Speaker</li>
+            </ul>
+        </div>
+
+        <div class="i-like">
+            <h1>I Like To</h1>
+            <ul class="lists">
+                <li>Learn New Things</li>
+                <li>Intracting With People</li>
+                <li>Reading Books</li>
+                <li>Gardening</li>
+            </ul>
+        </div>
+
+    </div>
+    <hr>
+
+    <div>
+        <h1 class="project">My Projects</h1>
+        <div class="project-grid">
+            <div class="project-wrapper">
+                <img class="imgg" src="images/picture2.png"/>
+                <h4>Project 1</h4>
+            </div>
+            <div class="project-wrapper">
+                <img class="imgg" src="images/picture3.png"/>
+                <h4>Project 2</h4>
+            </div>
+            <div class="project-wrapper">
+                <img class="imgg" src="images/picture4.png"/>
+                <h4>Project 3</h4>
+            </div>
+            <div class="project-wrapper">
+                <img class="imgg" src="images/picture5.png"/>
+                <h4>Project 4</h4>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <footer>
+    <div class="links-contacts">
+
+    <div class="links">
+        <h1>Links</h1>
+        <ul class="links-list">
+            <li>
+                <a href="https://github.com/swathi12805">GitHub</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/swathi2005/">Linkedin</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="contact">
+        <h1>Contact-Info</h1>
+
+        <form id="forms" action="submit.php" method="POST">
+            <label for="email">
+                <h4>email:</h4>
+                <input id="mail" name="email" placeholder="enter email id" required/>
+            </label>
+
+            <label for="message">
+                <h4>message:</h4>
+                <textarea id="message" name="message" placeholder=" your message" required></textarea>
+            </label>
+            <div class="submit-wrapper">
+                <input type="submit" value="send message"/>
+            </div>
+        </form>
+    </div>
+    </div>
+    <div id="responseMessage"></div>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
